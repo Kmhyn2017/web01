@@ -1,0 +1,15 @@
+// 화면 3D 프리머티브 로 화면에 그리기
+function setup() {
+  createCanvas(windowWidth, windowHeight, WEBGL);
+}
+
+
+function draw() {
+  if(mouseIsPressed){
+    fill(0,255,0);
+    stroke(0);
+  }
+  else {normalMaterial();}
+  translate(mouseX-width/2, mouseY-height/2);
+  sphere(50); //구 plan() 면, box() 박스, cylinder() 원기둥, cone() 원뿔, tours() 도너츠
+}
